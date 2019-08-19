@@ -1,0 +1,60 @@
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.alerta{
+	background-color: #000;
+	color: #fff;
+	position: fixed;
+	z-index: 90020;
+	padding: 5px 20px;
+	top: 1em;
+	right: 5em;
+	border-radius: 3px;
+  max-width: 600px;
+  line-height: 1.5em;
+	animation-duration: 1s;
+  animation-fill-mode: both;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-name: flipInX;
+}
+.alerta.red, .alerta.rojo{ background-color: #dc3545 }
+.alerta.black, .alerta.negro{ background-color: #000 }
+.alerta.yellow, .alerta.amarillo{ background-color: #ffc107 }
+.alerta.green, .alerta.verde{ background-color: #28a745 }
+.alerta.blue, .alerta.azul{ background-color: #007bff }
+.alerta.orange, .alerta.anaranjado{ background-color: #d14e08 }
+.alerta.darken, .alerta.dark{ background-color: #343a40 }
+.alerta.gray, .alerta.grey{ background-color: #ccc }
+.alerta.purple{ background-color: #6f42c1 }
+.alerta.cyan{ background-color: #17a2b8 }
+.alerta.teal{ background-color: #20c997 }
+.alerta.indigo{ background-color: #6610f2 }
+.alerta.pink{ background-color: #e83e8c }
+.alerta.amber{ background-color: #FBC111 }
+.alerta.dargen{ background-color: #dc3545 }
+.alerta.warning{ background-color: #ffc107 }
+.alerta.success{ background-color: #28a745 }
