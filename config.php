@@ -1,6 +1,6 @@
 <?php
     // archivo de configuracion del sistema
-    define('url', "http://www.edutest.com/");
+    define('url', "https://testprofess.herokuapp.com/");
     define('root', $_SERVER['DOCUMENT_ROOT']);
     define('name', 'EduTest');
     define('online', false);
